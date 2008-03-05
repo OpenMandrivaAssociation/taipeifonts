@@ -1,11 +1,10 @@
 %define name	taipeifonts
 %define version	1.2
-%define release	%mkrel 21
 
 Summary:	Taipei Chinese big5 fonts 
 Name:		%{name}
 Version:	%{version}
-Release:	%{release}
+Release:	%mkrel 22
 License:	Public Domain
 Group:		System/Fonts/X11 bitmap
 Source0:	%{name}-%{version}.tar.bz2
