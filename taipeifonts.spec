@@ -4,7 +4,7 @@
 Summary:	Taipei Chinese big5 fonts 
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 23
+Release:	%mkrel 24
 License:	Public Domain
 Group:		System/Fonts/X11 bitmap
 Source0:	%{name}-%{version}.tar.bz2
