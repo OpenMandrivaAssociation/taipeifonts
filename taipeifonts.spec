@@ -28,13 +28,13 @@ bdftopcf taipei20.bdf | gzip -c > taipei20.pcf.gz
 bdftopcf taipei16.bdf | gzip -c > taipei16.pcf.gz
 
 %install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/fonts/misc
+rm -rf %{buildroot}
+mkdir -p %{buildroot}%{_datadir}/fonts/misc
 
-install -m 644 taipei24.pcf.gz $RPM_BUILD_ROOT%{_datadir}/fonts/misc/
-install -m 644 taipei20.pcf.gz $RPM_BUILD_ROOT%{_datadir}/fonts/misc/
-install -m 644 taipei16.pcf.gz $RPM_BUILD_ROOT%{_datadir}/fonts/misc/
-install -m 644 vga12x24.pcf.gz $RPM_BUILD_ROOT%{_datadir}/fonts/misc/
+install -m 644 taipei24.pcf.gz %{buildroot}%{_datadir}/fonts/misc/
+install -m 644 taipei20.pcf.gz %{buildroot}%{_datadir}/fonts/misc/
+install -m 644 taipei16.pcf.gz %{buildroot}%{_datadir}/fonts/misc/
+install -m 644 vga12x24.pcf.gz %{buildroot}%{_datadir}/fonts/misc/
 
 %post
 mkfontscale %_datadir/fonts/misc
@@ -45,7 +45,7 @@ mkfontscale %_datadir/fonts/misc
 mkfontdir %_datadir/fonts/misc
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files 
 %defattr(0644,root,root,0755)
