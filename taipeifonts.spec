@@ -4,7 +4,7 @@
 Summary:	Taipei Chinese big5 fonts 
 Name:		%{name}
 Version:	%{version}
-Release:	38
+Release:	39
 License:	Public Domain
 Group:		System/Fonts/X11 bitmap
 Source0:	%{name}-%{version}.tar.bz2
@@ -92,7 +92,7 @@ rm -rf $RPM_BUILD_ROOT
 - do mkfontdir and mkfontscale in post and postun instead of shipping files; clean spec; rebuild for new era
 
 
-* Sat Jul 12 2003 Per Øyvind Karlsen <peroyvind@sintrax.net> 1.2-20mdk
+* Sat Jul 12 2003 Per å–•vind Karlsen <peroyvind@sintrax.net> 1.2-20mdk
 - macroize
 - s/Copyright/License/
 - cosmetics
@@ -151,14 +151,14 @@ rm -rf $RPM_BUILD_ROOT
 
 * Tue Apr 14 1998 Cheng Yuan-Chung <platin@ms.ccafps.khc.edu.tw>
 - Revised the fonts.alias file to fit the useage of lyx-I18N
-- §â·¢Åé¦r®³±¼¤F¡Abut ¬°¤F CXwin ¨Ï¥Î¡A¤´¥Î alias °µ¥X taipeik20¡Btaipeik24¡C
+- æŠŠæ¥·é«”å­—æ‹¿æ‰äº†ï¼Œbut ç‚ºäº† CXwin ä½¿ç”¨ï¼Œä»ç”¨ alias åšå‡º taipeik20ã€taipeik24ã€‚
 
 * Fri Jan 09 1998 Cheng Yuan-Chung <platin@ms.ccafps.khc.edu.tw> 
 - add fonts 8x16.pcf.gz && vga12x24.pcf.gz
 
 * Thu Jan 01 1998 Cheng Yuan-Chung <platin@ms.ccafps.khc.edu.tw>
-- ³o¨Ç taipei ¦r§Î¬O±q§Úªº¦r§Î¥Ø¿ı¸Ì­±¿ï¥X¨Óªº¡A§Ú¤]¤£ª¾¹D
-- ¥L­Ìªº¥X³B¡E¡E¡E§Æ±æ¨S¦³ª©Åv°İÃD¤~¦n¡C
+- é€™äº› taipei å­—å½¢æ˜¯å¾æˆ‘çš„å­—å½¢ç›®éŒ„è£¡é¢é¸å‡ºä¾†çš„ï¼Œæˆ‘ä¹Ÿä¸çŸ¥é“
+- ä»–å€‘çš„å‡ºè™•â€§â€§â€§å¸Œæœ›æ²’æœ‰ç‰ˆæ¬Šå•é¡Œæ‰å¥½ã€‚
 - will automatically change the FontPath lines in XF86Config
 - - must have perl
 
